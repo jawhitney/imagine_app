@@ -1,5 +1,10 @@
 class PagesController < ApplicationController
-  def home
-  end
+	def splash
+		@title = "Welcome!"
+	end
 
+	def home
+		@title = "Home"
+	end
+	
 end

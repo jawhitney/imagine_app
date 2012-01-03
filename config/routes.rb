@@ -1,5 +1,9 @@
 ImagineApp::Application.routes.draw do
-  get "pages/home"
+	get "pages/splash"
+	get "pages/home"
+
+	match '/home', :to => 'pages#home'
+	root :to => 'pages#splash'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
